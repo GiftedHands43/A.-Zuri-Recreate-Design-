@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+padding: 0;
+}
+
+body {
+  background: black;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: 
+   'a a a b b'
+   'a a a b b'
+   'c c d d d'
+   'c c e e e'
+    ;
+  gap: 5px;
+  width: 320px;
+  margin-top: 250px;
+margin-left: 200px;
+  margin-right: 20px;
+
+}
+
+@media screen (min-width: 780px){
+ .container {
+   width: 800px;
+ }
+}
+
+.a {
+  background: orangered;
+  padding: 40px 30px;
+  text-align: center;
+grid-area: a;
+
+}
+.b {
+  background: orange;
+padding: 40px 30px;
+  text-align: center;
+grid-area: b;
+}
+.c {
+  background: green;
+padding: 30px;
+  text-align: center;
+grid-area: c;
+}
+.d {
+  background: dodgerblue;
+padding: 20px;
+  text-align: center;
+grid-area: d;
+}
+.e {
+  background: dodgerblue;
+padding: 30px;
+  text-align: center;
+grid-area: e;
+}
+
